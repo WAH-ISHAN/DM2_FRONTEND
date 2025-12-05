@@ -1,16 +1,62 @@
-# React + Vite
+# DM2_FRONTEND (Data Management II Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend client for my Data Management II university assignment. It is a modern, responsive web application built to interact with the [DM2_BACKEND](https://github.com/WAH-ISHAN/DM2_BACKEND) API.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Modern Tech Stack:** Built with **React** and **TypeScript** for a robust and scalable architecture.
+* **Fast Build Tooling:** Powered by **Vite** for lightning-fast development and HMR (Hot Module Replacement).
+* **Responsive Design:** Styled with **Tailwind CSS** to ensure a mobile-friendly and professional UI.
+* **API Integration:** seamlessly connects to the backend REST API for data operations.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Framework:** React (TypeScript)
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS + PostCSS
+* **Linting:** ESLint
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+DM2_FRONTEND/
+├── public/           # Static assets
+├── src/              # Source code
+│   ├── components/   # Reusable UI components
+│   ├── pages/        # Page views
+│   ├── services/     # API service calls (Axios/Fetch)
+│   ├── App.tsx       # Main application component
+│   └── main.tsx      # Entry point
+├── .env              # Environment variables
+├── tailwind.config.js # Tailwind configuration
+└── vite.config.js    # Vite configuration
+⚙️ Installation & Setup
+Clone the repository:
+
+Bash
+
+git clone [https://github.com/WAH-ISHAN/DM2_FRONTEND.git](https://github.com/WAH-ISHAN/DM2_FRONTEND.git)
+cd DM2_FRONTEND
+Install dependencies:
+
+Bash
+
+npm install
+Configure Environment Variables: Create a .env file in the root directory (if not already present) and add your backend URL:
+
+Code snippet
+
+VITE_API_BASE_URL=http://localhost:3000/api
+Run the development server:
+
+Bash
+
+npm run dev
+The app should now be running at http://localhost:5173.
+
+📦 Build for Production
+To create a production-ready build:
+
+Bash
+
+npm run build
